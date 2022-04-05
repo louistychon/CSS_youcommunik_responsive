@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    background-color: #1a1a1d;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner {
+    width: 100%;
+}
+
+.logo-horizontal {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.icon {
+    margin: 15px;
+}
+
+.icon p{
+    text-align:center;
+}
+
+.icon img {
+    display: block;
+    margin: auto;
+}
+
+.flex-container p {
+    color: white;
+}
+
+#intro {
+    width: 100%;
+}
+
+.flex-intro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-intro {
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.para-intro {
+    margin:5%;
+}
+
+#package {
+    display: flex;
+    flex-direction: column;
+    background-color: #334d5c;
+}
+
+
+h2, .outils h1{
+    color:#6d6d6e;
+}
+
+#package h1,
+#package h2 {
+    color: white;
+}
+
+.temps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.temps div {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+#flex-package {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top:3%;
+}
+
+
+#flex-package div {
+    padding: 15px;
+}
+
+.txtpackage {
+    align-self: center;
+    width:50%;
+}
+
+.txtpackage h1{
+    font-size: 250%;
+}
+
+.btn-clair {
+    margin: auto;
+    text-align: center;
+    height: 45px;
+    color: #334d5c;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-fonce {
+    margin: auto;
+    text-align: center;
+    height: 45px;
+    width: 100%;
+    background-color: #393a3b;
+    color: white;
+}
+
+.temps-package {
+    color: white;
+    margin-top:3%;
+}
+
+.temps-fin {
+    color: grey;
+    height:500px;
+    width:auto;
+}
+
+.outils {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.outils div {
+    padding: 20px;
+    margin-top:3%;
+}
+
+footer {
+    background-color: #393a3b;
+    height: calc(fit-content);
+    margin-top: 10%;
+    position:relative;
+}
+
+.flex-footer {
+    display: flex;
+    color: white;
+    margin-left: 7%;
+}
+
+.flex-print{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+
+.img-footer {
+    display: flex;
+    justify-content: space-evenly;
+    width:55%;
+}
+
+.flex-intro div{
+    width:50%;
+}
+
+.img-footer div{
+    margin-left: 15px;
+}
+.img-footer div>img{
+    width:100%;
+    height:100%;
+}
+
+.responsive {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cgv {
+    background-color: #393a3b;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    color: white;
+}
+
+.cgv>p {
+    float: right;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 599px) {
+
+    .flex-footer,
+    .flex-intro,
+    .temps,
+    .outils {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flex-footer div{
+        margin-top:25px;
+        margin:auto;
+        justify-content: space-evenly;
+    }
+
+    .flex-footer h3{
+        text-align: center;
+    }
+
+    .flex-footer img{
+        width:50px;
+        height:50px;
+        max-width: unset;
+        max-height: unset;
+    }
+
+    .img-footer div{
+        margin-left: 15px;
+    }
+
+    .temps div {
+        width: 80%;
+        height:100%;
+        margin:5%;
+    }
+
+    .logo-horizontal {
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .temps-fin{
+        height:auto;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    .flex-container img{
+        display: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .outils{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .media{
+        display:none;
+    }
+
+    .outils div{
+    text-align:center;}
+
+    .flex-intro{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .txtpackage {
+        margin-left: none;
+        width:100%;
+        text-align:center;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .logo-horizontal {
+    display: block;
+    position: relative;
+}}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .logo-horizontal {
+        display: block;
+        position: relative;
+    }
+}
